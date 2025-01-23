@@ -1,37 +1,33 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using System.ComponentModel;
+using Microsoft.VisualBasic;
 
-// Brick ConstructBrick(double width, double height, double thickness)
-// {
-//     return new Brick()
-//     {
-//         Width = width,
-//         Height = height,
-//         Thickness = thickness,
-//     };
-// }
 
-var brick = new Brick(1.2, 3.4, 5.6, "red");
-var brick2 = new Brick(6.5, 4.3, 2.1, "grey");
+var list = new List<string> {"Name1"};
+var person = new Person(4, "alice");
+list.Add(person.Name);
 
-brick.PrintColor();
-brick2.PrintColor();
+public class Person
+{
+    public void NameList()
+    {
+        var Names = new List<string> {"Name1"};
+        Console.WriteLine(Names);
+    }
+    public double Age;
 
-// var brick = new Brick()
-// {
-//     Width = 1.2,
-//     Height = 3.4,
-//     Thickness = 5.6,
-// };
+    public string Name;
 
-//brick.GetVolume();
+    public Person(double age, string name)
+    {
+        Age = age;
+        Name = name;
+    }
+    
+}
 
-// var brick2 = new Brick()
-// {
-//     Width = 9.8,
-//     Height = 7.6,
-//     Thickness = 5.4,
-// };
+public class Dog
+{
+    public string Name;
 
-//Console.WriteLine($"The color of brick 1 is {brick.PrintColor}!");
-//Console.WriteLine($"The color of brick 2 is {brick2.PrintColor}!");
+    
+}
