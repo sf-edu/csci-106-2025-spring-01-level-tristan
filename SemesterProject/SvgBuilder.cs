@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace SemesterProject;
 
 public class SvgBuilder
@@ -25,9 +27,11 @@ public class SvgBuilder
 
     public SvgBuilder AddRectangle(int x, int y, int width, int height, string color)
     {
-        // Replace this line with your code
-        throw new NotImplementedException();
-
+        
+        
+        .AddRectangle(100,50,150,200,"#FF0000")
+        .Build();
+        
         // Don't remove this!
         return this;
     }
