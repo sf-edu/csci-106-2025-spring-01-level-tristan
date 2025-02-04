@@ -28,9 +28,9 @@ public class SvgBuilder
     public SvgBuilder AddRectangle(int x, int y, int width, int height, string color)
     {
         
+        Buffer += string.Format(RECT_TEMPLATE, x, y, width, height, color);
         
-        .AddRectangle(100,50,150,200,"#FF0000")
-        .Build();
+        
         
         // Don't remove this!
         return this;

@@ -1,4 +1,1 @@
-<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
-    <rect x=\"350" y=\"200" width=\"40" height=\"50" style=\"ff0000" />;
-
-</svg>
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg"><rect x="100" y="50" width="150" height="200" style="fill:#FF0000" /><rect x="40" y="80" width="10" height="100" style="fill:#00FFF0" /><rect x="300" y="80" width="400" height="1500" style="fill:#0000FF" /><rect x="400" y="100" width="300" height="200" style="fill:#FF0F00" /><rect x="200" y="25" width="40" height="150" style="fill:#FFFF00" /><rect x="100" y="300" width="150" height="200" style="fill:#FF00FF" /></svg>
