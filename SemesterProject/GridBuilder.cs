@@ -1,3 +1,6 @@
+using System.Collections.ObjectModel;
+using System.Drawing;
+
 namespace SemesterProject;
 
 public interface IGridBuilder
@@ -33,11 +36,12 @@ public class GridBuilder : IGridBuilder
     {
         SvgBuilder = svgBuilder;
         GridSize = gridSize;
+        gridSize = 4;
     }
 
     public void Parse(string line)
     {
-        // Replace this line with your code!
-        throw new NotImplementedException();
+       new Rectangle = ([0],[0]) ["#FF0000"]
+
     }
 }
