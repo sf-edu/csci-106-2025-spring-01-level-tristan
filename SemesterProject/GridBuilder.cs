@@ -41,7 +41,13 @@ public class GridBuilder : IGridBuilder
 
     public void Parse(string line)
     {
-       new Rectangle = ([0],[0]) ["#FF0000"]
+    //    (0, 0) #ff0000
+    var globs = line.Split(' ').Select(glob => glob.Replace("(",string.Empty).Replace(")",string.Empty).Replace(",",string.Empty)).ToList();
+    
+       var x = int.Parse(globs[0]);
+       var y = int.Parse(globs[1]);
+       var color = globs[2];
 
+       SvgBuilder.AddRectangle(x*GridSize,y*GridSize,GridSize,GridSize,color);
     }
 }
